@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background-light);
+  box-shadow: 0 0 5px var(--text-light);
+  padding: 10px 10%;
+  position: relative;
+  img {
+    display: block;
+    height: 40px;
+  }
+  .title {
+    flex: 1;
+    color: var(--primary);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    span {
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+    .avatar {
+      box-shadow: 0 0 10px var(--text-light);
+      background: var(--background);
+      height: 34px;
+      width: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+    }
+  }
+}

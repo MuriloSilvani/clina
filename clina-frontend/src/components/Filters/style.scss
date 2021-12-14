@@ -1,0 +1,26 @@
+.filters {
+  padding: 15px 10px 20px 10px;
+  display: flex;
+  gap: 10px;
+  .filter {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    label {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    input, select {
+      background: var(--background-light);
+      border: 1px solid var(--text-light);
+      border-radius: 4px;
+      outline: none;
+      padding: 4px 10px;
+      min-height: 1.2rem;
+      font-size: 0.8rem;
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      color: var(--text);
+    }
+  }
+}

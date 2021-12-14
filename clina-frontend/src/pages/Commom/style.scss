@@ -1,0 +1,14 @@
+.commom {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .container {
+    flex: 1;
+    padding: 20px 10% 0 10%;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    display: flex;
+  }
+}
