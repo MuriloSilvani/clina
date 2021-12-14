@@ -1,0 +1,47 @@
+ApiLoginUser:
+  handler: src/index.loginUser
+  events:
+    - http:
+        method: POST
+        path: /login
+        cors: true
+
+ApiCreateUser:
+  handler: src/index.createUser
+  events:
+    - http:
+        method: POST
+        path: /users
+        cors: true
+
+ApiGetUsers:
+  handler: src/index.getUsers
+  events:
+    - http:
+        method: GET
+        path: /users
+        cors: true
+
+ApiGetUser:
+  handler: src/index.getUser
+  events:
+    - http:
+        method: GET
+        path: /users/{user_id}
+        cors: true
+
+ApiModifyUser:
+  handler: src/index.modifyUser
+  events:
+    - http:
+        method: PUT
+        path: /users/{user_id}
+        cors: true
+
+ApiDeleteUser:
+  handler: src/index.deleteUser
+  events:
+    - http:
+        method: DELETE
+        path: /users/{user_id}
+        cors: true

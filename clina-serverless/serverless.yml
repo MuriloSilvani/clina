@@ -1,0 +1,12 @@
+service: clina-serverless
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  lambdaHashingVersion: 20201221
+
+functions:
+  - ${file(functions/rooms.yml)}
+  - ${file(functions/users.yml)}

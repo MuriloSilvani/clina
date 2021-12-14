@@ -1,0 +1,39 @@
+ApiCreateRoom:
+  handler: src/index.createRoom
+  events:
+    - http:
+        method: POST
+        path: /rooms
+        cors: true
+
+ApiGetRooms:
+  handler: src/index.getRooms
+  events:
+    - http:
+        method: GET
+        path: /rooms
+        cors: true
+
+ApiGetRoom:
+  handler: src/index.getRoom
+  events:
+    - http:
+        method: GET
+        path: /rooms/{room_id}
+        cors: true
+
+ApiModifyRoom:
+  handler: src/index.modifyRoom
+  events:
+    - http:
+        method: PUT
+        path: /rooms/{room_id}
+        cors: true
+
+ApiDeleteRoom:
+  handler: src/index.deleteRoom
+  events:
+    - http:
+        method: DELETE
+        path: /rooms/{room_id}
+        cors: true
